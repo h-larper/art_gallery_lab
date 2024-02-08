@@ -25,14 +25,19 @@ public class Customer {
     }
 
 
+    public void buyArtwork(Gallery gallery, Artwork artwork) {
+        if(wallet >= artwork.getPrice()) {
+            wallet -= artwork.getPrice();
+        }
+    }
 
-//
-//    public ArrayList<Artwork> getArtCollection() {
-//        return this.artCollection;
+
+        // ATTEMPTED ADD TO ART COLLECTION
+//    public void addToArtCollection(Artwork artwork) {
+//        this.artCollection.add(artwork);
 //    }
 //
-//    public void addToArtCollection(ArrayList<Artwork> painting) {
-//        this.artCollection = painting;
+//    public void artCollectionCount() ){
+//        this.artCollection.size();
 //    }
-
-}
+    }
