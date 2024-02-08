@@ -21,4 +21,11 @@ public class CustomerTest {
     public void customerHasWallet() {
         assertThat(customer.getWallet()).isEqualTo(100);
     }
+
+    @Test
+    public void updateCustomerWallet() {
+        customer.setWallet(30);
+        assertThat(customer.getWallet()).isEqualTo(30);
+    }
+
 }

@@ -16,4 +16,8 @@ public class Customer {
         return this.wallet;
     }
 
+    public void setWallet(int amount) {
+        this.wallet = amount;
+    }
+
 }
