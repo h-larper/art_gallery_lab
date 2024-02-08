@@ -24,13 +24,13 @@ public class ArtworkTest {
 
     @Test
     public void canGetPrice() {
-        assertThat(artwork.getPrice()).isEqualTo("30");
+        assertThat(artwork.getPrice()).isEqualTo(30);
     }
 
     @Test
     public void canSetPrice() {
         artwork.setPrice(40);
-        assertThat(artwork.getPrice()).isEqualTo("40");
+        assertThat(artwork.getPrice()).isEqualTo(40);
     }
 
 

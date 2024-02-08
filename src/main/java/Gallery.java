@@ -7,9 +7,9 @@ public class Gallery {
     private ArrayList<Artwork> stock;
 
 
-    public Gallery(String inputName, int inputTill) {
+    public Gallery(String inputName) {
         this.name = inputName;
-        this.till = inputTill;
+        this.till = 0;
         this.stock = new ArrayList<>();
     }
 
@@ -18,8 +18,25 @@ public class Gallery {
     }
 
     public int getTill() {
-
+        return till;
     }
 
+    public void setTill(int tillAmount) {
+        this.till = tillAmount;
+    }
+
+    public int artworkCount() {
+        return this.stock.size();
+    }
+
+    public void addArtwork(Artwork artwork){
+        this.stock.add(artwork);
+    }
+
+    public void removeArtwork(Artwork artwork) {
+        this.stock.remove(artwork);
+    }
 
 }
+
+

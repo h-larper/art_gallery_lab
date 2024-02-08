@@ -24,6 +24,8 @@ public class Customer {
         this.wallet = amount;
     }
 
+
+
 //
 //    public ArrayList<Artwork> getArtCollection() {
 //        return this.artCollection;
