@@ -37,6 +37,10 @@ public class Gallery {
         this.stock.remove(artwork);
     }
 
+    public void updateTill(Artwork artwork) {
+        till += artwork.getPrice();
+    }
+
 }
 
 

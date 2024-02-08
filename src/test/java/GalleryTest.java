@@ -40,4 +40,9 @@ public class GalleryTest {
         assertThat(gallery.artworkCount()).isEqualTo(1);
     }
 
+    @Test
+    public void canUpdateTill() {
+        ohana.setPrice(0);
+        assertThat(ohana.getPrice()).isEqualTo(gallery.getTill());
+    }
 }
